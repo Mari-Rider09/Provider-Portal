@@ -22,8 +22,6 @@ class HelperClass: NSObject
 {
     static let shared = HelperClass()
     
-    print("wellcime")
-    print("jfkggaf")
     private override init() {
         super.init()
     }
