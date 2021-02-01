@@ -1,0 +1,1103 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1803B7A02554028800E91BE6 /* patienDemographic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803B79F2554028800E91BE6 /* patienDemographic.swift */; };
+		1803B7A22554224D00E91BE6 /* patientDemographicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803B7A12554224D00E91BE6 /* patientDemographicViewModel.swift */; };
+		18041D60251B223D00A690EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18041D5F251B223D00A690EC /* AppDelegate.swift */; };
+		18041D62251B223D00A690EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18041D61251B223D00A690EC /* SceneDelegate.swift */; };
+		18041D67251B223D00A690EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18041D65251B223D00A690EC /* Main.storyboard */; };
+		18041D69251B224000A690EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18041D68251B224000A690EC /* Assets.xcassets */; };
+		18041D6C251B224000A690EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18041D6A251B224000A690EC /* LaunchScreen.storyboard */; };
+		18041D77251B224000A690EC /* ProviderPortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18041D76251B224000A690EC /* ProviderPortalTests.swift */; };
+		18041D82251B224000A690EC /* ProviderPortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18041D81251B224000A690EC /* ProviderPortalUITests.swift */; };
+		18041D90251B2A4400A690EC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18041D8F251B2A4400A690EC /* loginViewController.swift */; };
+		1811785D2524525400E74BF6 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811785B2524525300E74BF6 /* MenuListViewController.swift */; };
+		1811785E2524525400E74BF6 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811785C2524525300E74BF6 /* dashboardViewController.swift */; };
+		181B871525302B4A001041C0 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181B871425302B4A001041C0 /* Patient.storyboard */; };
+		181B8717253036A8001041C0 /* patientFiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B8716253036A8001041C0 /* patientFiterViewController.swift */; };
+		1829FE7E25340F9D0086D3A3 /* demographicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829FE7D25340F9D0086D3A3 /* demographicViewController.swift */; };
+		182CAD7A2559092100AF73A0 /* patientClaimModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CAD792559092100AF73A0 /* patientClaimModel.swift */; };
+		182CAD7C25590CD100AF73A0 /* patientClaimViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CAD7B25590CD100AF73A0 /* patientClaimViewModel.swift */; };
+		182CAD7E2559616D00AF73A0 /* patientDocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CAD7D2559616D00AF73A0 /* patientDocumentModel.swift */; };
+		182CAD80255969CA00AF73A0 /* patientDocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CAD7F255969CA00AF73A0 /* patientDocumentsViewModel.swift */; };
+		182E227C25526E570023D9A3 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E227B25526E570023D9A3 /* userModel.swift */; };
+		182E227E2552B82A0023D9A3 /* patientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E227D2552B82A0023D9A3 /* patientsModel.swift */; };
+		182E22802552C7090023D9A3 /* patientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E227F2552C7090023D9A3 /* patientViewModel.swift */; };
+		18306713255BBC0C00DAE7A8 /* patientInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18306712255BBC0C00DAE7A8 /* patientInsuranceViewModel.swift */; };
+		18318E822570C88100288142 /* patientFilterPriInsuranceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18318E812570C88100288142 /* patientFilterPriInsuranceModel.swift */; };
+		18318E842570CB2900288142 /* patientClaimFilterSubmissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18318E832570CB2900288142 /* patientClaimFilterSubmissionStatus.swift */; };
+		18318E862570CC9A00288142 /* patientClaimFilterPTLReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18318E852570CC9A00288142 /* patientClaimFilterPTLReason.swift */; };
+		18318E882570D05C00288142 /* pFilterPriInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18318E872570D05C00288142 /* pFilterPriInsuranceViewModel.swift */; };
+		18322688252D819C00B7A21A /* dashboardFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18322687252D819C00B7A21A /* dashboardFilterViewController.swift */; };
+		1838A2F1255E46DE008E0D4D /* patientClaimDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838A2F0255E46DE008E0D4D /* patientClaimDetailModel.swift */; };
+		1838A2F3255E4AE7008E0D4D /* patientClaimDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838A2F2255E4AE7008E0D4D /* patientClaimDetailViewModel.swift */; };
+		183E75412539749000F2E5A4 /* insuranceInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E75402539749000F2E5A4 /* insuranceInformationViewController.swift */; };
+		183E7543253974C700F2E5A4 /* insuranceInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E7542253974C700F2E5A4 /* insuranceInformationTableViewCell.swift */; };
+		183E754525397B4100F2E5A4 /* claimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E754425397B4100F2E5A4 /* claimViewController.swift */; };
+		183E754725397B7500F2E5A4 /* claimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E754625397B7500F2E5A4 /* claimTableViewCell.swift */; };
+		1841E136251DD78900D02C87 /* patientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841E135251DD78900D02C87 /* patientViewController.swift */; };
+		1841E138251DD7AD00D02C87 /* patientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841E137251DD7AD00D02C87 /* patientTableViewCell.swift */; };
+		1854318A2551366B005612C4 /* loginUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185431892551366B005612C4 /* loginUserModel.swift */; };
+		1854E8312549463000F99C2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854E8302549463000F99C2D /* ViewController.swift */; };
+		1875D4C5254FD65400E31308 /* NetworkConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875D4C4254FD65300E31308 /* NetworkConnectionCheck.swift */; };
+		1875D4C7254FD6E900E31308 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875D4C6254FD6E900E31308 /* HelperClass.swift */; };
+		188C25752542E40D006F0F4B /* documentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C25742542E40D006F0F4B /* documentViewController.swift */; };
+		188C25772542E434006F0F4B /* documentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C25762542E434006F0F4B /* documentTableViewCell.swift */; };
+		18C991F8254037080012F84D /* demographicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C991F7254037080012F84D /* demographicTableViewCell.swift */; };
+		18EEA5D32591ADF7002CD2B6 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEA5D22591ADF7002CD2B6 /* DashboardModel.swift */; };
+		18EEA5D52591B3E9002CD2B6 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEA5D42591B3E9002CD2B6 /* DashboardViewModel.swift */; };
+		18F73412252319900065B93B /* patientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F73411252319900065B93B /* patientDetailViewController.swift */; };
+		18F73414252319CE0065B93B /* patientDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F73413252319CE0065B93B /* patientDetailTableViewCell.swift */; };
+		BB525D7F256252D50093288D /* CodesNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB525D7E256252D50093288D /* CodesNotesTableViewCell.swift */; };
+		BB536E522524582500191F2A /* ColumnChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E4C2524582400191F2A /* ColumnChartTableViewCell.swift */; };
+		BB536E532524582500191F2A /* ClaimSubmissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E4D2524582400191F2A /* ClaimSubmissionTableViewCell.swift */; };
+		BB536E542524582500191F2A /* MainDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E4E2524582400191F2A /* MainDetailTableViewCell.swift */; };
+		BB536E552524582500191F2A /* RatioChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E4F2524582400191F2A /* RatioChartTableViewCell.swift */; };
+		BB536E562524582500191F2A /* PyaerClaimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E502524582500191F2A /* PyaerClaimTableViewCell.swift */; };
+		BB536E572524582500191F2A /* ClaimReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB536E512524582500191F2A /* ClaimReportTableViewCell.swift */; };
+		BB8F16F92578ED76001C0F77 /* InvoiceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F16F82578ED76001C0F77 /* InvoiceDetailTableViewCell.swift */; };
+		BB8F16FB2578EF29001C0F77 /* InvoiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F16FA2578EF29001C0F77 /* InvoiceDetailViewController.swift */; };
+		BB909E7825874AD500BE0BF4 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = BB909E7725874AD500BE0BF4 /* Montserrat */; };
+		BB95BDD3257627E20069C2FE /* DocumentFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95BDD2257627E20069C2FE /* DocumentFilterViewController.swift */; };
+		BB95BDD62577B7FB0069C2FE /* PatientPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95BDD52577B7FB0069C2FE /* PatientPaymentViewController.swift */; };
+		BB95BDD82577B8B00069C2FE /* PatienPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95BDD72577B8B00069C2FE /* PatienPaymentTableViewCell.swift */; };
+		BBCA3087252D9E0A00574B19 /* DWCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA3086252D9E0A00574B19 /* DWCTableViewCell.swift */; };
+		BBCA30892534245200574B19 /* RoundImage copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA30882534245200574B19 /* RoundImage copy.swift */; };
+		BBCA308B253428F200574B19 /* DWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA308A253428F200574B19 /* DWCViewController.swift */; };
+		BBCA308D25342CA400574B19 /* DWC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCA308C25342CA400574B19 /* DWC.storyboard */; };
+		BBCDFA45255BF31900A6EE86 /* patientInsuranceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDFA44255BF31900A6EE86 /* patientInsuranceModel.swift */; };
+		BBCDFA48255D1B2000A6EE86 /* claimDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDFA47255D1B2000A6EE86 /* claimDetailViewController.swift */; };
+		BBCDFA4A255D1B3500A6EE86 /* claimDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDFA49255D1B3500A6EE86 /* claimDetailInfoTableViewCell.swift */; };
+		BBE206FC256E66C300239422 /* ClaimFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE206FB256E66C300239422 /* ClaimFilterViewController.swift */; };
+		BBF64A3F2563A69B00D83AC2 /* SummaryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF64A3E2563A69B00D83AC2 /* SummaryDetailTableViewCell.swift */; };
+		E40F2FB5161989C57B112215 /* libPods-ProviderPortal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D62D4A95A26FA0EAC3BB4E4 /* libPods-ProviderPortal.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18041D73251B224000A690EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18041D54251B223D00A690EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18041D5B251B223D00A690EC;
+			remoteInfo = ProviderPortal;
+		};
+		18041D7E251B224000A690EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18041D54251B223D00A690EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18041D5B251B223D00A690EC;
+			remoteInfo = ProviderPortal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016DDA03EF9EEA56FBCBFF99 /* Pods-ProviderPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProviderPortal.debug.xcconfig"; path = "Target Support Files/Pods-ProviderPortal/Pods-ProviderPortal.debug.xcconfig"; sourceTree = "<group>"; };
+		1803B79F2554028800E91BE6 /* patienDemographic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patienDemographic.swift; path = ProviderPortal/View/Dashboard/patienDemographic.swift; sourceTree = SOURCE_ROOT; };
+		1803B7A12554224D00E91BE6 /* patientDemographicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientDemographicViewModel.swift; path = ProviderPortal/View/Dashboard/patientDemographicViewModel.swift; sourceTree = SOURCE_ROOT; };
+		18041D5C251B223D00A690EC /* ProviderPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProviderPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18041D5F251B223D00A690EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18041D61251B223D00A690EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18041D66251B223D00A690EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18041D68251B224000A690EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18041D6B251B224000A690EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18041D6D251B224000A690EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18041D72251B224000A690EC /* ProviderPortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProviderPortalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18041D76251B224000A690EC /* ProviderPortalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderPortalTests.swift; sourceTree = "<group>"; };
+		18041D78251B224000A690EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18041D7D251B224000A690EC /* ProviderPortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProviderPortalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18041D81251B224000A690EC /* ProviderPortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderPortalUITests.swift; sourceTree = "<group>"; };
+		18041D83251B224000A690EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18041D8F251B2A4400A690EC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		1811785B2524525300E74BF6 /* MenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
+		1811785C2524525300E74BF6 /* dashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
+		181B871425302B4A001041C0 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		181B8716253036A8001041C0 /* patientFiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientFiterViewController.swift; sourceTree = "<group>"; };
+		1829FE7D25340F9D0086D3A3 /* demographicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demographicViewController.swift; sourceTree = "<group>"; };
+		182CAD792559092100AF73A0 /* patientClaimModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientClaimModel.swift; path = ProviderPortal/View/Dashboard/patientClaimModel.swift; sourceTree = SOURCE_ROOT; };
+		182CAD7B25590CD100AF73A0 /* patientClaimViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientClaimViewModel.swift; path = ProviderPortal/View/Dashboard/patientClaimViewModel.swift; sourceTree = SOURCE_ROOT; };
+		182CAD7D2559616D00AF73A0 /* patientDocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientDocumentModel.swift; path = ProviderPortal/View/Dashboard/patientDocumentModel.swift; sourceTree = SOURCE_ROOT; };
+		182CAD7F255969CA00AF73A0 /* patientDocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientDocumentsViewModel.swift; path = ProviderPortal/View/Dashboard/patientDocumentsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		182E227B25526E570023D9A3 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = userModel.swift; path = ProviderPortal/View/Dashboard/userModel.swift; sourceTree = SOURCE_ROOT; };
+		182E227D2552B82A0023D9A3 /* patientsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientsModel.swift; path = ProviderPortal/View/Dashboard/patientsModel.swift; sourceTree = SOURCE_ROOT; };
+		182E227F2552C7090023D9A3 /* patientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientViewModel.swift; path = ProviderPortal/View/Dashboard/patientViewModel.swift; sourceTree = SOURCE_ROOT; };
+		18306712255BBC0C00DAE7A8 /* patientInsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientInsuranceViewModel.swift; sourceTree = SOURCE_ROOT; };
+		18318E812570C88100288142 /* patientFilterPriInsuranceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientFilterPriInsuranceModel.swift; sourceTree = "<group>"; };
+		18318E832570CB2900288142 /* patientClaimFilterSubmissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientClaimFilterSubmissionStatus.swift; sourceTree = "<group>"; };
+		18318E852570CC9A00288142 /* patientClaimFilterPTLReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientClaimFilterPTLReason.swift; sourceTree = "<group>"; };
+		18318E872570D05C00288142 /* pFilterPriInsuranceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pFilterPriInsuranceViewModel.swift; path = ProviderPortal/Model/pFilterPriInsuranceViewModel.swift; sourceTree = SOURCE_ROOT; };
+		18322687252D819C00B7A21A /* dashboardFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardFilterViewController.swift; sourceTree = "<group>"; };
+		1838A2F0255E46DE008E0D4D /* patientClaimDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientClaimDetailModel.swift; sourceTree = "<group>"; };
+		1838A2F2255E4AE7008E0D4D /* patientClaimDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = patientClaimDetailViewModel.swift; path = ProviderPortal/Model/patientClaimDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		183E75402539749000F2E5A4 /* insuranceInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insuranceInformationViewController.swift; sourceTree = "<group>"; };
+		183E7542253974C700F2E5A4 /* insuranceInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insuranceInformationTableViewCell.swift; sourceTree = "<group>"; };
+		183E754425397B4100F2E5A4 /* claimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claimViewController.swift; sourceTree = "<group>"; };
+		183E754625397B7500F2E5A4 /* claimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claimTableViewCell.swift; sourceTree = "<group>"; };
+		1841E135251DD78900D02C87 /* patientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientViewController.swift; sourceTree = "<group>"; };
+		1841E137251DD7AD00D02C87 /* patientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientTableViewCell.swift; sourceTree = "<group>"; };
+		185431892551366B005612C4 /* loginUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginUserModel.swift; path = ProviderPortal/View/Dashboard/loginUserModel.swift; sourceTree = SOURCE_ROOT; };
+		1854E8302549463000F99C2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1875D4C4254FD65300E31308 /* NetworkConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnectionCheck.swift; sourceTree = "<group>"; };
+		1875D4C6254FD6E900E31308 /* HelperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		188C25742542E40D006F0F4B /* documentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = documentViewController.swift; sourceTree = "<group>"; };
+		188C25762542E434006F0F4B /* documentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = documentTableViewCell.swift; sourceTree = "<group>"; };
+		18C991F7254037080012F84D /* demographicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demographicTableViewCell.swift; sourceTree = "<group>"; };
+		18EEA5D22591ADF7002CD2B6 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		18EEA5D42591B3E9002CD2B6 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardViewModel.swift; path = ProviderPortal/Model/DashboardViewModel.swift; sourceTree = SOURCE_ROOT; };
+		18F73411252319900065B93B /* patientDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientDetailViewController.swift; sourceTree = "<group>"; };
+		18F73413252319CE0065B93B /* patientDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientDetailTableViewCell.swift; sourceTree = "<group>"; };
+		6D62D4A95A26FA0EAC3BB4E4 /* libPods-ProviderPortal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProviderPortal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB525D7E256252D50093288D /* CodesNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesNotesTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E4C2524582400191F2A /* ColumnChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnChartTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E4D2524582400191F2A /* ClaimSubmissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimSubmissionTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E4E2524582400191F2A /* MainDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDetailTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E4F2524582400191F2A /* RatioChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatioChartTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E502524582500191F2A /* PyaerClaimTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PyaerClaimTableViewCell.swift; sourceTree = "<group>"; };
+		BB536E512524582500191F2A /* ClaimReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimReportTableViewCell.swift; sourceTree = "<group>"; };
+		BB8F16F82578ED76001C0F77 /* InvoiceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDetailTableViewCell.swift; sourceTree = "<group>"; };
+		BB8F16FA2578EF29001C0F77 /* InvoiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDetailViewController.swift; sourceTree = "<group>"; };
+		BB909E7725874AD500BE0BF4 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
+		BB95BDD2257627E20069C2FE /* DocumentFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFilterViewController.swift; sourceTree = "<group>"; };
+		BB95BDD52577B7FB0069C2FE /* PatientPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientPaymentViewController.swift; sourceTree = "<group>"; };
+		BB95BDD72577B8B00069C2FE /* PatienPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatienPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		BBCA3086252D9E0A00574B19 /* DWCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCTableViewCell.swift; sourceTree = "<group>"; };
+		BBCA30882534245200574B19 /* RoundImage copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoundImage copy.swift"; sourceTree = "<group>"; };
+		BBCA308A253428F200574B19 /* DWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCViewController.swift; sourceTree = "<group>"; };
+		BBCA308C25342CA400574B19 /* DWC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DWC.storyboard; sourceTree = "<group>"; };
+		BBCDFA44255BF31900A6EE86 /* patientInsuranceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientInsuranceModel.swift; sourceTree = "<group>"; };
+		BBCDFA47255D1B2000A6EE86 /* claimDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claimDetailViewController.swift; sourceTree = "<group>"; };
+		BBCDFA49255D1B3500A6EE86 /* claimDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = claimDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		BBE206FB256E66C300239422 /* ClaimFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimFilterViewController.swift; sourceTree = "<group>"; };
+		BBF64A3E2563A69B00D83AC2 /* SummaryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		F9E8289D9EFE6C1F9A339E55 /* Pods-ProviderPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProviderPortal.release.xcconfig"; path = "Target Support Files/Pods-ProviderPortal/Pods-ProviderPortal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18041D59251B223D00A690EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40F2FB5161989C57B112215 /* libPods-ProviderPortal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D6F251B224000A690EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D7A251B224000A690EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18041D53251B223D00A690EC = {
+			isa = PBXGroup;
+			children = (
+				18041D5E251B223D00A690EC /* ProviderPortal */,
+				18041D75251B224000A690EC /* ProviderPortalTests */,
+				18041D80251B224000A690EC /* ProviderPortalUITests */,
+				18041D5D251B223D00A690EC /* Products */,
+				F1DBA98DF31B6A5C2A006188 /* Pods */,
+				7ED8919ED6E478487CC349BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18041D5D251B223D00A690EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18041D5C251B223D00A690EC /* ProviderPortal.app */,
+				18041D72251B224000A690EC /* ProviderPortalTests.xctest */,
+				18041D7D251B224000A690EC /* ProviderPortalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18041D5E251B223D00A690EC /* ProviderPortal */ = {
+			isa = PBXGroup;
+			children = (
+				1875D4C3254FD5A500E31308 /* Helper */,
+				18041D5F251B223D00A690EC /* AppDelegate.swift */,
+				18041D61251B223D00A690EC /* SceneDelegate.swift */,
+				18041D65251B223D00A690EC /* Main.storyboard */,
+				181B871425302B4A001041C0 /* Patient.storyboard */,
+				BBCA308C25342CA400574B19 /* DWC.storyboard */,
+				18041D68251B224000A690EC /* Assets.xcassets */,
+				18041D6A251B224000A690EC /* LaunchScreen.storyboard */,
+				BBCA30882534245200574B19 /* RoundImage copy.swift */,
+				18041D6D251B224000A690EC /* Info.plist */,
+				1841E131251DD70200D02C87 /* Model */,
+				1841E132251DD70E00D02C87 /* View */,
+				1841E133251DD72200D02C87 /* View-Model */,
+			);
+			path = ProviderPortal;
+			sourceTree = "<group>";
+		};
+		18041D75251B224000A690EC /* ProviderPortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				18041D76251B224000A690EC /* ProviderPortalTests.swift */,
+				18041D78251B224000A690EC /* Info.plist */,
+			);
+			path = ProviderPortalTests;
+			sourceTree = "<group>";
+		};
+		18041D80251B224000A690EC /* ProviderPortalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18041D81251B224000A690EC /* ProviderPortalUITests.swift */,
+				18041D83251B224000A690EC /* Info.plist */,
+			);
+			path = ProviderPortalUITests;
+			sourceTree = "<group>";
+		};
+		1811785F2524529600E74BF6 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1811785B2524525300E74BF6 /* MenuListViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		18117861252454D500E74BF6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18041D8F251B2A4400A690EC /* loginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		181178622524551600E74BF6 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1811785C2524525300E74BF6 /* dashboardViewController.swift */,
+				18322687252D819C00B7A21A /* dashboardFilterViewController.swift */,
+				181178632524552A00E74BF6 /* Cells */,
+				1854E8302549463000F99C2D /* ViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		181178632524552A00E74BF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB536E512524582500191F2A /* ClaimReportTableViewCell.swift */,
+				BB536E4D2524582400191F2A /* ClaimSubmissionTableViewCell.swift */,
+				BB536E4C2524582400191F2A /* ColumnChartTableViewCell.swift */,
+				BB536E4E2524582400191F2A /* MainDetailTableViewCell.swift */,
+				BB536E502524582500191F2A /* PyaerClaimTableViewCell.swift */,
+				BB536E4F2524582400191F2A /* RatioChartTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1829FE7C25340F380086D3A3 /* Demographic */ = {
+			isa = PBXGroup;
+			children = (
+				1829FE7D25340F9D0086D3A3 /* demographicViewController.swift */,
+				18C991F7254037080012F84D /* demographicTableViewCell.swift */,
+			);
+			path = Demographic;
+			sourceTree = "<group>";
+		};
+		183E753E2539733800F2E5A4 /* Claims */ = {
+			isa = PBXGroup;
+			children = (
+				183E754425397B4100F2E5A4 /* claimViewController.swift */,
+				183E754625397B7500F2E5A4 /* claimTableViewCell.swift */,
+				BBE206FA256E66AA00239422 /* Claim Filter */,
+				BBCDFA46255D1B0300A6EE86 /* ClaimDetail */,
+			);
+			path = Claims;
+			sourceTree = "<group>";
+		};
+		183E753F253973B400F2E5A4 /* Insurance Information */ = {
+			isa = PBXGroup;
+			children = (
+				183E75402539749000F2E5A4 /* insuranceInformationViewController.swift */,
+				183E7542253974C700F2E5A4 /* insuranceInformationTableViewCell.swift */,
+			);
+			path = "Insurance Information";
+			sourceTree = "<group>";
+		};
+		1841E131251DD70200D02C87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185431892551366B005612C4 /* loginUserModel.swift */,
+				182E227D2552B82A0023D9A3 /* patientsModel.swift */,
+				1803B79F2554028800E91BE6 /* patienDemographic.swift */,
+				182CAD792559092100AF73A0 /* patientClaimModel.swift */,
+				182CAD7D2559616D00AF73A0 /* patientDocumentModel.swift */,
+				BBCDFA44255BF31900A6EE86 /* patientInsuranceModel.swift */,
+				1838A2F0255E46DE008E0D4D /* patientClaimDetailModel.swift */,
+				18318E812570C88100288142 /* patientFilterPriInsuranceModel.swift */,
+				18318E832570CB2900288142 /* patientClaimFilterSubmissionStatus.swift */,
+				18318E852570CC9A00288142 /* patientClaimFilterPTLReason.swift */,
+				18EEA5D22591ADF7002CD2B6 /* DashboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1841E132251DD70E00D02C87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB536E58252AEF5400191F2A /* DWC */,
+				181178622524551600E74BF6 /* Dashboard */,
+				18117861252454D500E74BF6 /* Login */,
+				1811785F2524529600E74BF6 /* SideMenu */,
+				18F73410252319210065B93B /* patientDetail */,
+				1841E134251DD75F00D02C87 /* Patient */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1841E133251DD72200D02C87 /* View-Model */ = {
+			isa = PBXGroup;
+			children = (
+				182E227B25526E570023D9A3 /* userModel.swift */,
+				182E227F2552C7090023D9A3 /* patientViewModel.swift */,
+				1803B7A12554224D00E91BE6 /* patientDemographicViewModel.swift */,
+				182CAD7B25590CD100AF73A0 /* patientClaimViewModel.swift */,
+				182CAD7F255969CA00AF73A0 /* patientDocumentsViewModel.swift */,
+				18306712255BBC0C00DAE7A8 /* patientInsuranceViewModel.swift */,
+				1838A2F2255E4AE7008E0D4D /* patientClaimDetailViewModel.swift */,
+				18318E872570D05C00288142 /* pFilterPriInsuranceViewModel.swift */,
+				18EEA5D42591B3E9002CD2B6 /* DashboardViewModel.swift */,
+			);
+			path = "View-Model";
+			sourceTree = "<group>";
+		};
+		1841E134251DD75F00D02C87 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				1841E135251DD78900D02C87 /* patientViewController.swift */,
+				1841E137251DD7AD00D02C87 /* patientTableViewCell.swift */,
+				181B8716253036A8001041C0 /* patientFiterViewController.swift */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		1875D4C3254FD5A500E31308 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1875D4C4254FD65300E31308 /* NetworkConnectionCheck.swift */,
+				1875D4C6254FD6E900E31308 /* HelperClass.swift */,
+				BB909E7625874AC100BE0BF4 /* Fonts */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		188C25732542E345006F0F4B /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				188C25742542E40D006F0F4B /* documentViewController.swift */,
+				188C25762542E434006F0F4B /* documentTableViewCell.swift */,
+				BB95BDD1257627CD0069C2FE /* Filter */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		18F73410252319210065B93B /* patientDetail */ = {
+			isa = PBXGroup;
+			children = (
+				18F73411252319900065B93B /* patientDetailViewController.swift */,
+				18F73413252319CE0065B93B /* patientDetailTableViewCell.swift */,
+				BB95BDD42577B7DB0069C2FE /* Patient Payment */,
+				183E753F253973B400F2E5A4 /* Insurance Information */,
+				183E753E2539733800F2E5A4 /* Claims */,
+				188C25732542E345006F0F4B /* Document */,
+				1829FE7C25340F380086D3A3 /* Demographic */,
+			);
+			path = patientDetail;
+			sourceTree = "<group>";
+		};
+		7ED8919ED6E478487CC349BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D62D4A95A26FA0EAC3BB4E4 /* libPods-ProviderPortal.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB525D7C256252950093288D /* PatientInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BBCDFA49255D1B3500A6EE86 /* claimDetailInfoTableViewCell.swift */,
+			);
+			path = PatientInfo;
+			sourceTree = "<group>";
+		};
+		BB525D7D256252B60093288D /* CodesNotes */ = {
+			isa = PBXGroup;
+			children = (
+				BB525D7E256252D50093288D /* CodesNotesTableViewCell.swift */,
+			);
+			path = CodesNotes;
+			sourceTree = "<group>";
+		};
+		BB536E58252AEF5400191F2A /* DWC */ = {
+			isa = PBXGroup;
+			children = (
+				BBCA3086252D9E0A00574B19 /* DWCTableViewCell.swift */,
+				BBCA308A253428F200574B19 /* DWCViewController.swift */,
+			);
+			path = DWC;
+			sourceTree = "<group>";
+		};
+		BB8F16F72578ED17001C0F77 /* Invoice Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F16F82578ED76001C0F77 /* InvoiceDetailTableViewCell.swift */,
+				BB8F16FA2578EF29001C0F77 /* InvoiceDetailViewController.swift */,
+			);
+			path = "Invoice Detail";
+			sourceTree = "<group>";
+		};
+		BB909E7625874AC100BE0BF4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BB909E7725874AD500BE0BF4 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BB95BDD1257627CD0069C2FE /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				BB95BDD2257627E20069C2FE /* DocumentFilterViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		BB95BDD42577B7DB0069C2FE /* Patient Payment */ = {
+			isa = PBXGroup;
+			children = (
+				BB95BDD52577B7FB0069C2FE /* PatientPaymentViewController.swift */,
+				BB95BDD72577B8B00069C2FE /* PatienPaymentTableViewCell.swift */,
+				BB8F16F72578ED17001C0F77 /* Invoice Detail */,
+			);
+			path = "Patient Payment";
+			sourceTree = "<group>";
+		};
+		BBCDFA46255D1B0300A6EE86 /* ClaimDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BBCDFA47255D1B2000A6EE86 /* claimDetailViewController.swift */,
+				BBF64A3D2563A64000D83AC2 /* SummaryDetail */,
+				BB525D7D256252B60093288D /* CodesNotes */,
+				BB525D7C256252950093288D /* PatientInfo */,
+			);
+			path = ClaimDetail;
+			sourceTree = "<group>";
+		};
+		BBE206FA256E66AA00239422 /* Claim Filter */ = {
+			isa = PBXGroup;
+			children = (
+				BBE206FB256E66C300239422 /* ClaimFilterViewController.swift */,
+			);
+			path = "Claim Filter";
+			sourceTree = "<group>";
+		};
+		BBF64A3D2563A64000D83AC2 /* SummaryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BBF64A3E2563A69B00D83AC2 /* SummaryDetailTableViewCell.swift */,
+			);
+			path = SummaryDetail;
+			sourceTree = "<group>";
+		};
+		F1DBA98DF31B6A5C2A006188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				016DDA03EF9EEA56FBCBFF99 /* Pods-ProviderPortal.debug.xcconfig */,
+				F9E8289D9EFE6C1F9A339E55 /* Pods-ProviderPortal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18041D5B251B223D00A690EC /* ProviderPortal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18041D86251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortal" */;
+			buildPhases = (
+				B13D6757A218704F50D5A4CA /* [CP] Check Pods Manifest.lock */,
+				18041D58251B223D00A690EC /* Sources */,
+				18041D59251B223D00A690EC /* Frameworks */,
+				18041D5A251B223D00A690EC /* Resources */,
+				76E836EB387508C3B0FDB9D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProviderPortal;
+			productName = ProviderPortal;
+			productReference = 18041D5C251B223D00A690EC /* ProviderPortal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18041D71251B224000A690EC /* ProviderPortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18041D89251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortalTests" */;
+			buildPhases = (
+				18041D6E251B224000A690EC /* Sources */,
+				18041D6F251B224000A690EC /* Frameworks */,
+				18041D70251B224000A690EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18041D74251B224000A690EC /* PBXTargetDependency */,
+			);
+			name = ProviderPortalTests;
+			productName = ProviderPortalTests;
+			productReference = 18041D72251B224000A690EC /* ProviderPortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18041D7C251B224000A690EC /* ProviderPortalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18041D8C251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortalUITests" */;
+			buildPhases = (
+				18041D79251B224000A690EC /* Sources */,
+				18041D7A251B224000A690EC /* Frameworks */,
+				18041D7B251B224000A690EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18041D7F251B224000A690EC /* PBXTargetDependency */,
+			);
+			name = ProviderPortalUITests;
+			productName = ProviderPortalUITests;
+			productReference = 18041D7D251B224000A690EC /* ProviderPortalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18041D54251B223D00A690EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					18041D5B251B223D00A690EC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					18041D71251B224000A690EC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 18041D5B251B223D00A690EC;
+					};
+					18041D7C251B224000A690EC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 18041D5B251B223D00A690EC;
+					};
+				};
+			};
+			buildConfigurationList = 18041D57251B223D00A690EC /* Build configuration list for PBXProject "ProviderPortal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18041D53251B223D00A690EC;
+			productRefGroup = 18041D5D251B223D00A690EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18041D5B251B223D00A690EC /* ProviderPortal */,
+				18041D71251B224000A690EC /* ProviderPortalTests */,
+				18041D7C251B224000A690EC /* ProviderPortalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18041D5A251B223D00A690EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCA308D25342CA400574B19 /* DWC.storyboard in Resources */,
+				18041D6C251B224000A690EC /* LaunchScreen.storyboard in Resources */,
+				181B871525302B4A001041C0 /* Patient.storyboard in Resources */,
+				18041D69251B224000A690EC /* Assets.xcassets in Resources */,
+				18041D67251B223D00A690EC /* Main.storyboard in Resources */,
+				BB909E7825874AD500BE0BF4 /* Montserrat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D70251B224000A690EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D7B251B224000A690EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76E836EB387508C3B0FDB9D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProviderPortal/Pods-ProviderPortal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProviderPortal/Pods-ProviderPortal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProviderPortal/Pods-ProviderPortal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13D6757A218704F50D5A4CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProviderPortal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18041D58251B223D00A690EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18041D60251B223D00A690EC /* AppDelegate.swift in Sources */,
+				183E754525397B4100F2E5A4 /* claimViewController.swift in Sources */,
+				BBCDFA45255BF31900A6EE86 /* patientInsuranceModel.swift in Sources */,
+				BB95BDD82577B8B00069C2FE /* PatienPaymentTableViewCell.swift in Sources */,
+				182CAD7E2559616D00AF73A0 /* patientDocumentModel.swift in Sources */,
+				182CAD7C25590CD100AF73A0 /* patientClaimViewModel.swift in Sources */,
+				BB536E562524582500191F2A /* PyaerClaimTableViewCell.swift in Sources */,
+				1803B7A22554224D00E91BE6 /* patientDemographicViewModel.swift in Sources */,
+				BBF64A3F2563A69B00D83AC2 /* SummaryDetailTableViewCell.swift in Sources */,
+				BBCA30892534245200574B19 /* RoundImage copy.swift in Sources */,
+				188C25772542E434006F0F4B /* documentTableViewCell.swift in Sources */,
+				183E754725397B7500F2E5A4 /* claimTableViewCell.swift in Sources */,
+				1829FE7E25340F9D0086D3A3 /* demographicViewController.swift in Sources */,
+				182E22802552C7090023D9A3 /* patientViewModel.swift in Sources */,
+				BB536E532524582500191F2A /* ClaimSubmissionTableViewCell.swift in Sources */,
+				188C25752542E40D006F0F4B /* documentViewController.swift in Sources */,
+				1803B7A02554028800E91BE6 /* patienDemographic.swift in Sources */,
+				1841E136251DD78900D02C87 /* patientViewController.swift in Sources */,
+				1811785D2524525400E74BF6 /* MenuListViewController.swift in Sources */,
+				18EEA5D52591B3E9002CD2B6 /* DashboardViewModel.swift in Sources */,
+				181B8717253036A8001041C0 /* patientFiterViewController.swift in Sources */,
+				18041D62251B223D00A690EC /* SceneDelegate.swift in Sources */,
+				1838A2F1255E46DE008E0D4D /* patientClaimDetailModel.swift in Sources */,
+				BB8F16FB2578EF29001C0F77 /* InvoiceDetailViewController.swift in Sources */,
+				18041D90251B2A4400A690EC /* loginViewController.swift in Sources */,
+				BB525D7F256252D50093288D /* CodesNotesTableViewCell.swift in Sources */,
+				BBCA3087252D9E0A00574B19 /* DWCTableViewCell.swift in Sources */,
+				18F73414252319CE0065B93B /* patientDetailTableViewCell.swift in Sources */,
+				182CAD80255969CA00AF73A0 /* patientDocumentsViewModel.swift in Sources */,
+				183E75412539749000F2E5A4 /* insuranceInformationViewController.swift in Sources */,
+				182E227E2552B82A0023D9A3 /* patientsModel.swift in Sources */,
+				BB536E552524582500191F2A /* RatioChartTableViewCell.swift in Sources */,
+				BBE206FC256E66C300239422 /* ClaimFilterViewController.swift in Sources */,
+				BBCDFA48255D1B2000A6EE86 /* claimDetailViewController.swift in Sources */,
+				BBCDFA4A255D1B3500A6EE86 /* claimDetailInfoTableViewCell.swift in Sources */,
+				1841E138251DD7AD00D02C87 /* patientTableViewCell.swift in Sources */,
+				1838A2F3255E4AE7008E0D4D /* patientClaimDetailViewModel.swift in Sources */,
+				1875D4C5254FD65400E31308 /* NetworkConnectionCheck.swift in Sources */,
+				BB8F16F92578ED76001C0F77 /* InvoiceDetailTableViewCell.swift in Sources */,
+				BB95BDD62577B7FB0069C2FE /* PatientPaymentViewController.swift in Sources */,
+				1875D4C7254FD6E900E31308 /* HelperClass.swift in Sources */,
+				18EEA5D32591ADF7002CD2B6 /* DashboardModel.swift in Sources */,
+				BB95BDD3257627E20069C2FE /* DocumentFilterViewController.swift in Sources */,
+				BB536E542524582500191F2A /* MainDetailTableViewCell.swift in Sources */,
+				18306713255BBC0C00DAE7A8 /* patientInsuranceViewModel.swift in Sources */,
+				18318E822570C88100288142 /* patientFilterPriInsuranceModel.swift in Sources */,
+				1854E8312549463000F99C2D /* ViewController.swift in Sources */,
+				18318E842570CB2900288142 /* patientClaimFilterSubmissionStatus.swift in Sources */,
+				BB536E522524582500191F2A /* ColumnChartTableViewCell.swift in Sources */,
+				18318E882570D05C00288142 /* pFilterPriInsuranceViewModel.swift in Sources */,
+				1854318A2551366B005612C4 /* loginUserModel.swift in Sources */,
+				183E7543253974C700F2E5A4 /* insuranceInformationTableViewCell.swift in Sources */,
+				182CAD7A2559092100AF73A0 /* patientClaimModel.swift in Sources */,
+				18318E862570CC9A00288142 /* patientClaimFilterPTLReason.swift in Sources */,
+				18F73412252319900065B93B /* patientDetailViewController.swift in Sources */,
+				BBCA308B253428F200574B19 /* DWCViewController.swift in Sources */,
+				BB536E572524582500191F2A /* ClaimReportTableViewCell.swift in Sources */,
+				182E227C25526E570023D9A3 /* userModel.swift in Sources */,
+				18C991F8254037080012F84D /* demographicTableViewCell.swift in Sources */,
+				1811785E2524525400E74BF6 /* dashboardViewController.swift in Sources */,
+				18322688252D819C00B7A21A /* dashboardFilterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D6E251B224000A690EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18041D77251B224000A690EC /* ProviderPortalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18041D79251B224000A690EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18041D82251B224000A690EC /* ProviderPortalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18041D74251B224000A690EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18041D5B251B223D00A690EC /* ProviderPortal */;
+			targetProxy = 18041D73251B224000A690EC /* PBXContainerItemProxy */;
+		};
+		18041D7F251B224000A690EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18041D5B251B223D00A690EC /* ProviderPortal */;
+			targetProxy = 18041D7E251B224000A690EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18041D65251B223D00A690EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18041D66251B223D00A690EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18041D6A251B224000A690EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18041D6B251B224000A690EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18041D84251B224000A690EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18041D85251B224000A690EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18041D87251B224000A690EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016DDA03EF9EEA56FBCBFF99 /* Pods-ProviderPortal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 77GG2QKAQC;
+				INFOPLIST_FILE = ProviderPortal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18041D88251B224000A690EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E8289D9EFE6C1F9A339E55 /* Pods-ProviderPortal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 77GG2QKAQC;
+				INFOPLIST_FILE = ProviderPortal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18041D8A251B224000A690EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProviderPortalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProviderPortal.app/ProviderPortal";
+			};
+			name = Debug;
+		};
+		18041D8B251B224000A690EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProviderPortalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProviderPortal.app/ProviderPortal";
+			};
+			name = Release;
+		};
+		18041D8D251B224000A690EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProviderPortalUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProviderPortal;
+			};
+			name = Debug;
+		};
+		18041D8E251B224000A690EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProviderPortalUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = max.ProviderPortalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProviderPortal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18041D57251B223D00A690EC /* Build configuration list for PBXProject "ProviderPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18041D84251B224000A690EC /* Debug */,
+				18041D85251B224000A690EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18041D86251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18041D87251B224000A690EC /* Debug */,
+				18041D88251B224000A690EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18041D89251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18041D8A251B224000A690EC /* Debug */,
+				18041D8B251B224000A690EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18041D8C251B224000A690EC /* Build configuration list for PBXNativeTarget "ProviderPortalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18041D8D251B224000A690EC /* Debug */,
+				18041D8E251B224000A690EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18041D54251B223D00A690EC /* Project object */;
+}

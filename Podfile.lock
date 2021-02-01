@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.0)
+  - BottomPopup (0.6.0)
+  - Highcharts (6.1.4)
+  - iOSDropDown (0.3.4)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SideMenu (6.5.0)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BottomPopup
+  - Highcharts (~> 6.1.0)
+  - iOSDropDown
+  - NVActivityIndicatorView
+  - SideMenu
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BottomPopup
+    - Highcharts
+    - iOSDropDown
+    - NVActivityIndicatorView
+    - SideMenu
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  BottomPopup: 1d5649a3b29396238f0e8f3c82075a7bfcf37ba7
+  Highcharts: a1d99de1c075fd9acedf25cde4f6e4a54266b25e
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: d36a77daf5ed145ae1c3146f57586f0fe3598890
+
+COCOAPODS: 1.8.4
